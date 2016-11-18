@@ -6,6 +6,9 @@
 		<artifactId>taotao-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<properties>
+	  <maven.tomcat.port>8001</maven.tomcat.port>
+	</properties>
 	<groupId>com.taotao</groupId>
 	<artifactId>taotao-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -24,23 +27,19 @@
 		<module>taotao-manager-service</module>
 		<module>taotao-manager-web</module>
 	</modules>
+	
 	<build>
 		<plugins>
 			<!-- 配置Tomcat插件 -->
 			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<configuration>
-					<port>8080</port>
-					<path>/</path>
-					<!-- 服务器热部署url，tomcat7的url -->
-					<url>http://192.168.1.52:8080/manager/text</url>
-					<!-- 用户名 -->
-					<username>tomcat</username>
-					<!-- 密码 -->
-					<password>tomcat</password>
-				</configuration>				
-			</plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.2</version>
+					<configuration>
+						<port>9090</port>
+						<path>/</path>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
 </project>
