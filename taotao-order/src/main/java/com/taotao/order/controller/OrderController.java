@@ -28,4 +28,7 @@ public class OrderController {
 			return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
 		}
 	}
+	public static void main(String[] args) {
+		//测试
+	}
 }
