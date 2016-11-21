@@ -34,11 +34,11 @@
 					<port>8080</port>
 					<path>/</path>
 					<!-- 服务器热部署url，tomcat7的url -->
-					<url>http://192.168.1.52:8080/manager/text</url>
+					<!-- <url>http://192.168.1.52:8080/manager/text</url> -->
 					<!-- 用户名 -->
-					<username>tomcat</username>
+					<!-- <username>tomcat</username> -->
 					<!-- 密码 -->
-					<password>tomcat</password>
+					<!-- <password>tomcat</password> -->
 				</configuration>				
 			</plugin>
 		</plugins>
